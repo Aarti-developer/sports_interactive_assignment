@@ -1,0 +1,32 @@
+@import "./abstract/mixins";
+@import "./abstract/variables";
+
+@import "./base/base";
+@import "./base/typography";
+
+// @import "./layout/footer";
+// @import "./layout/loader";
+// @import "./layout/forms";
+// @import "./layout/header";
+@import "./layout/layout";
+// @import "./layout/navigation";
+
+//Pages
+@import "./pages/index";
+@import "./responsive/responsive";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  height: auto;
+  font-family: $body-font;
+  background-color: $white;
+  color: $black;
+  margin: 0;
+  padding: 0;
+}

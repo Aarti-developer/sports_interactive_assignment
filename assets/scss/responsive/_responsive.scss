@@ -1,0 +1,68 @@
+@media (min-width: 375px) {
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 80%;
+  }
+
+  .match_main-section {
+    .match_main-score {
+      .match_main-team {
+        .match_main-team_inner {
+          .match_main-icon {
+            img {
+              height: 110px;
+            }
+          }
+        }
+      }
+    }
+
+    .match_main-details {
+      flex-direction: row;
+
+      .match_main-details_inner {
+        width: calc(50% - 1rem);
+      }
+    }
+  }
+  .latest-update-section {
+    .latest-update-card {
+      width: calc(50% - 1rem);
+      &::after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background: linear-gradient(0deg, #0f1c70d2 0%, #2d40cf00 100%);
+        border-radius: 5px;
+      }
+      .latest-update-content {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+        h4 {
+          color: $white;
+        }
+        .news-link {
+          span {
+            color: $white;
+          }
+          a {
+            img {
+              filter: none;
+            }
+          }
+        }
+      }
+    }
+    .latest-update-subcard {
+      width: calc(25% - 1.5rem);
+      display: inline-block;
+    }
+  }
+}
